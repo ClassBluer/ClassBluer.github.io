@@ -146,68 +146,6 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "Collapse all"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "Expand all"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
@@ -237,11 +175,18 @@
         </header>
 
         <div class="post-content">
-            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>WebLogic是美国Oracle公司出品的一个application server，确切的说是一个基于JAVAEE架构的中间件，WebLogic是用于开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。</p>
-<h2 id="CVE-2017-10271"><a href="#CVE-2017-10271" class="headerlink" title="CVE-2017-10271"></a>CVE-2017-10271</h2><p>aa</p>
-<h2 id="CVE-2017-3506"><a href="#CVE-2017-3506" class="headerlink" title="CVE-2017-3506"></a>CVE-2017-3506</h2><p>aa</p>
-<h2 id="CVE-2019-2725"><a href="#CVE-2019-2725" class="headerlink" title="CVE-2019-2725"></a>CVE-2019-2725</h2><p>aa</p>
-
+            <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="75a48875394f97b507b3ee1df26df1149378c67d4c7b3605c1e423fbe45b6fab">7ae05d577dd838f2545869b8e3ed2f206cdc0de6defc657a799242f2d08fc8d2a91725a465c6afb840c956c4ba0ff1d0bd4f7ada0d772ea411461e4b18ed21db1ab91baefa4271c50ecca020c24a1850e888cb3af253f822043bcadeb73b00185e6c38bc69f93066d1078dc6ec7c194ef9a9f3569295d7819b4a414fa8aaf280284f7eab5270e0dc896e6efd0673ea22159ef2e915ffba539910ee3c7f1027a07feba3f13bf19204973ac5e2c0a8e7b72016733f58260c7ef61a40a96bc3217a04edd566c3b49cfca852227aa55dd6292f1640b9c12758439d292b09bf8dedd3645989fe294e5f05c9f98c4d2fd3c00dc59f68c8520792b2b0d086bd6f70db3ab9c27bb1cc7a5f1b24e091a410f30e763cf2471c5fc401b7d4b69ff37a37fb5fcfaef9de76a253065c1446618b4c2b4bfc8d61bbd98f43f74e4646e85cefda64e6de7322f6b0e559957623b92fc13e3201a4e02fa32a3f11742c542d4b2c70a1f023d283644d9d3d254c32e6155ba549d52381efc955ce621a0fb1d48166d575c54ac78db2d298a6f34163fd7adcb5a183283dcc1bc746d7a258f2ef36ff69fbee6cd901c379e184fd7e93c00e6a037e25997a3be87d8c23c5c9cbc6330d8e9b350fead7bd1e3d1cbe78752b0a136dc7a0c883bf7e12474d01a0c946ea0fc380d106dac029f726edf828f6391f9a45bd2b20f688becdfd933243249380b23f2e0b3e3a931ab10a613df967a182e191ece48b845ec916bbadd0ac032b6eaa9eb17a1d93be45d8dbe2dfc62d2780a63d87612cef468862b82d34d73a15ae9648f5ed53fd0a46d6ad5f357a41eaab54b4cffbdb370f265c7a5ed947fa2bf3716e1d88a693e4b49177ff739e817f5362ca4dbd629995d49023475b431be34f80caf495549dfa04fe3ebc96efda8e09df42d791221eea4444f8b7b60a18190606f4584d14fb307cd5fa2d3e0853d2357063e82491f65f96d97638384b841e9cc4c28484f84a3696ae31c67b1e7a4724ec101a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Input Password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
         </div>
 
         
