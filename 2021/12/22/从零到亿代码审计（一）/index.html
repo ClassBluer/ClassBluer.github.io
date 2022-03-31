@@ -146,68 +146,6 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "Collapse all"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "Expand all"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
@@ -237,18 +175,18 @@
         </header>
 
         <div class="post-content">
-            <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li>IntelliJ IDEA</li>
-<li>PHPStudy（ 数据库使用 ）</li>
-<li>华夏ERP(V2.3)<ul>
-<li>github地址：<a target="_blank" rel="noopener" href="https://github.com/jishenghua/jshERP">https://github.com/jishenghua/jshERP</a></li>
-<li>百度网盘地址：链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1zBsW6uC5-WAIBec1OgqaDQ">https://pan.baidu.com/s/1zBsW6uC5-WAIBec1OgqaDQ</a> 提取码: suhq </li>
-</ul>
-</li>
-</ul>
-<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p><strong>直接拖入IDEA加载，Maven下载所需的包，配置相关数据库文件，点击Run即可。</strong></p>
-<h2 id="Fastjson反序列化命令执行"><a href="#Fastjson反序列化命令执行" class="headerlink" title="Fastjson反序列化命令执行"></a>Fastjson反序列化命令执行</h2><p>加载导入源码后，可以发现pom.xml文件中，引入的 <strong>fastjson</strong> 版本为 <strong>1.2.55</strong> ，已知该版本存在反序列化漏洞，首先对其进行代码审计。<br><img src="fastjson1.jpg" alt="Fastjson"></p>
-
+            <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3281419b8e736831332acd898ec9bc451fec64d967fa21f554799ac8bf733bc5">7ae05d577dd838f2545869b8e3ed2f206cdc0de6defc657a799242f2d08fc8d29fd595868f6b83743f9dafaae5cd04948263336ef50c376fa7da6a28086db05d9ac011ec2217061f3637f2441f6ceb3c5e57dcc02142c2b558a90b1391088926c85020795344b2b3ff1550c238068ba86654f0e17451dc97f65bebc5a90c8e3a4a0ea4327e03146f60e1c243267ea5c9fec8821719858a5e42c88619ff412544fd2ddc2f22cbe3f367122b1c82131d8c66e169679e8e239a827cf25d48a6a7265d81481801971c00a848d330fa0a6145789803c30d06fd1a13080b4b0afb9e2d0bf7ec7c2ba80790f9064ddcd0f652f5148b0b24722da6f4ead1103478fc6e770ee7bc12c57349f6916d09ee554646db8a80df1cdd8704ac4b9e1d5c60c41569c5b440b321e015837e32bd209f6312f4bcd6a2f2ade9b44afd2350dec0d14aa9a16ced7c6d2ee592077ce67ef4de83fd6b112294ec7d2042c97887e9ce4d783e1836217dc6d61df94f9f448a008b82d39c6033a48a18813bed4dfe609dc82e3e500acc94215085476f7d6eedd8dc3dd8a2a05b5b5365ece724f5a87517f7da1b81807f7fe5ca690b991af63da0be6ff6bf3be20d786a74486ab1dfe4da9db1d71451adf2ddb40ca273f604c5deb0114ef6dfbedca420b09a2bdb584ab2c32d23796a55372d9f7da70749a02952bf0dbc3cc85a6c36d39379021ef8b966be0e12cbd3f13f6da14523b5220c7ac89e6db24b4192fbb7391619464cbe0ab2d863e348b3acb2c95b96b034f5801c3d5856817c9486c01d6758eea4e56c45168ad6eb06de4c236f6d6b5c09fcbf369ee152727033a8d99a2b8ae36199343ab43dbc1a17c2316a2c9e52c0ec6eb405ebd25d44a64e2138dc5912859157465122598362f899638ff7399b45880796bd0a5e68e8e5c738cb90620a89936170c4dd62e28571c98efc699d76e86454e080433d09a8be9e289e5ea3ec74b6d287a776f3b339a452da76b91add792f14cec22b539908878e483e5580f73daa300788b2b353d1eea7839dc910b58bc665720abf33638e7a7453502339c45c9e4aa95c9afcb450c9b206048cdf5f22cedbc32b82ac7764309411a3547756fd2b573f1274633577744ecdaa333e2742bb852edef44ae57867b940e662212c4a8a98ea7f5bea7cae5b4dde1db7ec1ddca37cdd1d33fd636ee7bbaa3d51f816464271af48f078d376e585194efa562cbe3da1b2d52e22941ba37f928ceb91a0aafa1a165628d957e67f55ccd57c27ae2c44f20a191287cd909c77eb6011b14f4ef49f7f818767f087faf87d2ef65a53a8ab9701697efb049758231b5a90db0942b42537b3b2e8b85be1ae298f918a0f629c33935938f7ba85fed19dccf97786a25dc05ff335d703de885391ca07da4035a0805a8c5e71a4b4f6ad8010483ed804edbdafdb4e19e84eed351671361f796dae39ea04a6eed075734c78bfbf1e82fa17226de789c88569885664ec021cd143996522bbe04f72da99243b40e16d2f0e2c303eed0f8cb0c2f181406a58a0386ba85c75866d339ecf6154f35a055d5a7424cfc356ba19a9269cc8f30d790aaa35d85e76b73eab9ede59063a279af122e301e7508ca35c29ee25750bf566a84bd73d401e41a110ae9d126b8feb6936f2088e106d66f4c063d64787036fb5a44cf1907bff36985425a4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Input Password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
         </div>
 
         
